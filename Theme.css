@@ -1,0 +1,95 @@
+/* Retro Discord Theme - CSS Injection */
+
+/* Background: CRT-style dark grid */
+body, .appMount-2yBXZl, .app-2CXKsg {
+    background: #222 url('https://www.transparenttextures.com/patterns/graphy.png');
+    color: #00ff99;
+    font-family: 'VT323', 'Courier New', monospace !important;
+}
+
+/* Channel list sidebar */
+.sidebar-1tnWFu, .guilds-2JjMmN {
+    background: #181818 !important;
+    border-right: 2px solid #00ff99;
+}
+
+/* Chat area */
+.chat-2ZfjoI, .chatContent-3KubbW {
+    background: #222 !important;
+    color: #00ff99 !important;
+}
+
+/* Message bubbles */
+.message-2CShn3 {
+    background: rgba(0, 255, 153, 0.08) !important;
+    border-left: 3px solid #00ff99;
+    border-radius: 0;
+    font-family: 'VT323', 'Courier New', monospace !important;
+}
+
+/* Usernames */
+.username-1A8OIy, .headerText-3Uvj1Y {
+    color: #ff00cc !important;
+    text-shadow: 0 0 2px #00ff99;
+}
+
+/* Mentions */
+.mention {
+    background: #ff00cc !important;
+    color: #fff !important;
+    border-radius: 0;
+    font-weight: bold;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+    width: 10px;
+    background: #181818;
+}
+::-webkit-scrollbar-thumb {
+    background: #00ff99;
+    border-radius: 0;
+}
+
+/* Buttons */
+.button-38aScr, .button-1ZiXG9 {
+    background: #ff00cc !important;
+    color: #fff !important;
+    border-radius: 0 !important;
+    border: 2px solid #00ff99 !important;
+    font-family: 'VT323', 'Courier New', monospace !important;
+}
+
+/* Input fields */
+.input-2g-os5, .textArea-2Spzkt {
+    background: #181818 !important;
+    color: #00ff99 !important;
+    border: 2px solid #ff00cc !important;
+    border-radius: 0 !important;
+    font-family: 'VT323', 'Courier New', monospace !important;
+}
+
+/* Selected channel highlight */
+.selected-1sf9UK {
+    background: #00ff99 !important;
+    color: #222 !important;
+}
+
+/* Add CRT scanlines effect */
+body:before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.05) 0px,
+        rgba(0,0,0,0.05) 1px,
+        transparent 2px,
+        transparent 4px
+    );
+    z-index: 9999;
+}
+
+/* Import retro font */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
